@@ -1,0 +1,168 @@
+
+.todos {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3e9ff;
+    padding: 0px 20px;
+}
+.todos-div {
+    margin: 5px;
+    width: 400px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 20px;
+}
+.todosInput {
+    padding: 0px 20px;
+    margin-top: 10px;
+}
+.todosInput input {
+    width: 70%;
+    height: 35px;
+    border: 2px solid #e3e9ff;
+    margin-right: 5px;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-family:sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #af7eeb;
+}
+.todosInput input:focus{
+    border: 1px double #af7eeb;
+}
+.todos-div ul {
+    padding-left: 0px;
+}
+.todosInput button {
+    height: 35px;
+    padding: 8px;
+    width: 85px;
+    border: none;
+    background-color: #af7eeb;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.todosInput button:hover {
+    background-color: #e3e9ff;
+    color: #af7eeb;
+}
+.todo-Show::-webkit-scrollbar {
+    overflow-y: hidden;
+}
+.todo-Show {
+    height: 310px;
+    overflow-y: scroll;
+}
+.todo-Show li {
+    list-style-type: none;
+    padding: 5px;
+    background-color: #e3e9ff;
+    color: #af7eeb;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+.todos-list {
+    display: flex;
+    align-items: center;
+}
+.value {
+    width: 200px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    word-break: break-all;
+}
+.todo-Show li .inde {
+    font-size: 14px;
+    margin-right: 5px;
+    background-color: #af7eeb;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+.Buttons {
+    display: flex;
+}
+.Buttons button {
+    width: 60px;
+    border: 2px solid #e3e9ff;
+    margin-right: 3px;
+    color: #af7eeb;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Buttons button:hover {
+    background-color: #af7eeb;
+    border: 2px solid #af7eeb;
+    color: white;
+}
+.add-todo {
+    display: flex;
+    justify-content: center;
+}
+.add-todo-Btn {
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    background-color: #af7eeb;
+    color: white;
+    font-size: 15px;
+    border: 2px solid #af7eeb;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.add-todo-Btn:hover {
+    background-color: #e3e9ff;
+    color: #af7eeb;
+}
+
+
+
+@media only screen and (max-width: 430px) {
+    .todos-div {
+        width: 350px;
+    }
+    .value {
+        width: 150px;
+    }
+    .todosInput input {
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .todos-div {
+        width: 320px;
+    }
+    .value {
+        width: 120px;
+    }
+    .todosInput input {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .todos-div {
+        width: 300px;
+    }
+    .value {
+        width: 100px;
+    }
+    .todosInput input {
+        width: 55%;
+    }
+}
